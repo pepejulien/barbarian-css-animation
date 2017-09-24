@@ -1,0 +1,138 @@
+#barbarian {
+  background: url("../runnerNinja.png") 0px 0px no-repeat;
+  height: 801px;
+  width:1201px;
+  margin: 0 auto;
+  margin-bottom: -50px;
+  position: absolute;
+  bottom: 0;
+}
+
+.runnerNinja {
+  background: url("../runnerNinja.png") 0px 0px no-repeat;
+  animation: running1 .7s steps(4) infinite;
+  height: 801px;
+  width:1201px;
+  margin: 0 auto;
+  margin-bottom: -50px;
+  position: absolute;
+  bottom: 0;
+}
+
+@keyframes running1 {
+  0% { background-position: 0 0; }
+  33.333333% { background-position: -4804px 0; }
+  33.333334% { background-position: 0 -801px; }
+  66.666666% { background-position: -4804px -801px; }
+  66.666667% { background-position: 0 -1602px; }
+  100% { background-position: -4804px -1602px; }
+}
+
+/*.runnerNinja2 {
+  background: url("../runnerNinja2.png") 4000px 2001px no-repeat;
+  animation: running2 .7s steps(4) infinite;
+  height: 667;
+  width:1000px;
+  margin: 0 auto;
+  margin-bottom: -50px;
+  position: absolute;
+  bottom: 0;
+}
+
+@keyframes nunning2 {
+  0% { background-position: -3000 0; }
+  33.333333% { background-position: 0 0; }
+  33.333334% { background-position: -3000 -801px; }
+  66.666666% { background-position: 0 -801px; }
+  66.666667% { background-position: -3000 -1334; }
+  100% { background-position: 0 -1334; }
+}*/
+
+#barbarian:hover {
+  background: url("../Shield-EquipSpritesheet.png");
+  animation: elHover 2s steps(3) 1;
+}
+
+@keyframes elHover {
+  0% { background-position: 0 0; }
+  12.5% { background-position: -3603px 0; }
+  13% { background-position: 0px -801px; }
+  25% { background-position: -3603px -801px; }
+  25.5% { background-position: 0 -1602px; }
+  37.5% { background-position: -3603px -1602px; }
+  38% { background-position: 0 -2403px; }
+  50% { background-position: -3603px -2403px; }
+  50.8% { background-position: -3603px -2403px; }
+  62.5% { background-position: 0 -2403px; }
+  63% { background-position: -3603px -1602px; }
+  75% { background-position: 0 -1602px; }
+  75.5% { background-position: -3603px -801px; }
+  87.5% { background-position: 0px -801px; }
+  88% { background-position: -3603px 0; }
+  100% { background-position: 0 0; }
+}
+
+
+body{
+  background: url("https://i.pinimg.com/originals/47/1a/08/471a08fc76dc51e61d8cc160a70f3448.jpg");
+  background-repeat: repeat-x;
+  background-size: 1900px 1000px;
+  /*height: 100vh;
+  width: 100vw;*/
+  margin: 0;
+  padding: 0;
+
+}
+
+.fondo{
+  background: url("https://i.pinimg.com/originals/47/1a/08/471a08fc76dc51e61d8cc160a70f3448.jpg");
+  background-repeat: repeat-x;
+  background-size: 1900px 1000px;
+  animation: 5s linear 0s normal none infinite fondo;
+  /*height: 100vh;
+  width: 100vw;*/
+  margin: 0;
+  padding: 0;
+
+}
+
+@keyframes fondo {
+  from { background-position: 0 0; }
+  to { background-position: -1900px 0; }
+}
+
+.jump {
+  animation: jump 1s linear 1;
+}
+
+@keyframes jump {
+  0% { background-position: 0 0;}
+  50% { background-position: 0 -200px;}
+  100% { background-position: 0 0;}
+}
+
+.attacking {
+  background: url('../Attack-Spritesheet.png');
+  animation: attacking 1s steps(4) 1;
+  height: 801px;
+  width:1201px;
+  margin: 0 auto;
+  margin-bottom: -50px;
+  position: absolute;
+  bottom: 0;
+}
+
+@keyframes attacking {
+  0% { background-position: 0 0; }
+  16.66% { background-position: -4804px 0; }
+  33.3333333% { background-position: 0 -801px; }
+  33.3333334% { background-position: -4804px -801px; }
+  49.98% { background-position: 0 -1602px; }
+  49.981% { background-position: -4804px -1602px; }
+  66.4% { background-position: 0 -2403px; }
+  66.41% { background-position: -4804px -2403px; }
+  83.33% { background-position: 0 -3204px; }
+  83.331% { background-position: -4804px -3204px; }
+  99.96% { background-position: 0 -4005px; }
+  100% { background-position: -4804px -4005px; }
+}
