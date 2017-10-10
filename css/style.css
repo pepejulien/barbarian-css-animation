@@ -1,5 +1,5 @@
 #barbarian {
-  background: url("../runnerNinja.png") 0px 0px no-repeat;
+  background: url("../images/runnerNinja.png") 0px 0px no-repeat;
   height: 801px;
   width:1201px;
   margin: 0 auto;
@@ -8,8 +8,10 @@
   bottom: 0;
 }
 
+
+
 .runnerNinja {
-  background: url("../runnerNinja.png") 0px 0px no-repeat;
+  background: url("../images/runnerNinja.png") 0px 0px no-repeat;
   animation: running1 .7s steps(4) infinite;
   height: 801px;
   width:1201px;
@@ -20,16 +22,22 @@
 }
 
 @keyframes running1 {
-  0% { background-position: 0 0; }
+  0% {
+    background-position: 0 0;
+    left: -1201px;
+  }
   33.333333% { background-position: -4804px 0; }
   33.333334% { background-position: 0 -801px; }
   66.666666% { background-position: -4804px -801px; }
   66.666667% { background-position: 0 -1602px; }
-  100% { background-position: -4804px -1602px; }
+  100% {
+    background-position: -4804px -1602px;
+    left: 100%;
+  }
 }
 
-/*.runnerNinja2 {
-  background: url("../runnerNinja2.png") 4000px 2001px no-repeat;
+.runnerNinja2 {
+  background: url("../images/runnerNinja2.png") 4000px 2001px no-repeat;
   animation: running2 .7s steps(4) infinite;
   height: 667;
   width:1000px;
@@ -46,11 +54,11 @@
   66.666666% { background-position: 0 -801px; }
   66.666667% { background-position: -3000 -1334; }
   100% { background-position: 0 -1334; }
-}*/
+}
 
 #barbarian:hover {
-  background: url("../Shield-EquipSpritesheet.png");
-  animation: elHover 2s steps(3) 1;
+  background: url("../images/Shield-EquipSpritesheet.png");
+  animation: elHover 1s steps(3) 1;
 }
 
 @keyframes elHover {
@@ -101,6 +109,45 @@ body{
   to { background-position: -1900px 0; }
 }
 
+#fence {
+  background: url("../images/fence.png");
+  background-repeat: repeat-x;
+  background-size: 400px 100px;
+  margin-top: 830px;
+  height: 960px;
+  width: 100vw;
+}
+
+.fence {
+  background: url("../images/fence.png");
+  background-repeat: repeat-x;
+  background-size: 400px 100px;
+  animation: 2s linear 0s normal none infinite fence;
+  margin-top: 830px;
+  height: 960px;
+  width: 100vw;
+}
+
+@keyframes fence {
+  from { background-position: 0 0; }
+  to { background-position: -1000px 0; }
+}
+
+/*.tree {
+  background: url("../images/tree.png");
+  background-size: 1000px 1000px;
+  background-repeat: repeat-x;
+  animation: 1s linear 0s normal none infinite tree;
+  height: 100vh;
+  width: 100vw;
+}
+
+@keyframes tree {
+  from {background-position: 0 0;}
+  to {background-position: -1000px 0;}
+
+}*/
+
 .jump {
   animation: jump 1s linear 1;
 }
@@ -112,7 +159,7 @@ body{
 }
 
 .attacking {
-  background: url('../Attack-Spritesheet.png');
+  background: url('../images/Attack-Spritesheet.png');
   animation: attacking 1s steps(4) 1;
   height: 801px;
   width:1201px;

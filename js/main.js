@@ -9,7 +9,8 @@ const jump = function() {
 const running = function() {
   console.log('running');
   $('body').addClass('fondo')
-  $("#barbarian").addClass("runnerNinja");
+  $("#barbarian").addClass("runnerNinja")
+  $('#fence').addClass('fence');
 };
 
 const running2 = function() {
