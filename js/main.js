@@ -13,15 +13,15 @@ const running = function() {
   $('#fence').addClass('fence');
 };
 
-const running2 = function() {
+const running2 = function () {
   console.log('runningIzq');
   $('body').addClass('fondo2')
-  $('#barbarian').addClass('runnerNinja2')
-}
+  $('#barbarian').addClass('runnerNinja2');
+};
 
 
 $('body').keyup(function(e) {
-  if (e.keyCode == 32) {
+  if (e.keyCode == 38) {
     // user has pressed space
     jump();
   }

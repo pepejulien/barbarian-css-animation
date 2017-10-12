@@ -24,7 +24,7 @@
 @keyframes running1 {
   0% {
     background-position: 0 0;
-    left: -1201px;
+    /*left: -1201px;*/
   }
   33.333333% { background-position: -4804px 0; }
   33.333334% { background-position: 0 -801px; }
@@ -32,7 +32,7 @@
   66.666667% { background-position: 0 -1602px; }
   100% {
     background-position: -4804px -1602px;
-    left: 100%;
+    /*left: 100%;*/
   }
 }
 
